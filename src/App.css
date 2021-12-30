@@ -1,38 +1,50 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.area {
+  /* display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: column; */
+  padding: 20px;
+
+  border-radius: 40px;
+  box-shadow: 2px 2px 20px rgb(230, 230, 230);
 }
 
-.App-link {
-  color: #61dafb;
+.backgroundCoffee {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.alertNoCommande {
+  text-align: center;
+  width: 75%;
+  padding: 20px;
+
+  color: #FF71B3;
+
+  border-radius: 15px;
+  box-shadow: 2px 2px 20px rgb(230, 230, 230);
+}
+
+.h3 {
+  color: #FF71B3;
+}
+
+.buttonAddCommande {
+  width: 50px;
+  height: 50px;
+
+  padding: 10px;
+  cursor: pointer;
+
+  border: none;
+  border-radius: 10px;
+  transition: 100ms ease-in-out;
+}
+.buttonAddCommande:active {
+  background-color: #ffb3d6;
+}
+.buttonAddCommande:hover {
+  box-shadow: 1px 1px 10px rgb(230, 230, 230);
 }
