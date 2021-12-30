@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./App.css";
+import BlockCommande from "./commande";
 
 function App() {
   const messageCommande = React.createRef();
@@ -35,7 +36,7 @@ function App() {
         </div>
         <div
           className="backgroundCoffee"
-          style={{ maxWidth: "450px", height: "80%" }}
+          style={{ Width: "450px", height: "80%" }}
         >
           <div
             ref={messageCommande}
@@ -44,7 +45,7 @@ function App() {
           >
             Aucune commande
           </div>
-          <div>{stateActiveBlock ? block : "Call"}</div>
+          <div>{stateActiveBlock ?'' : <BlockCommande />}</div>
         </div>
       </div>
     </>
